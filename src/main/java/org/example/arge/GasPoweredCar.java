@@ -13,10 +13,10 @@ public class GasPoweredCar extends CarSkeleton {
         return getClass().getSimpleName() + " gas-powered car's engine is starting";
     }
     @Override
-    public int drive(){
-        System.out.println(getClass().getSimpleName()+"gas-powered car's engine is driving");
-        runEngine();
-        return 0;
+    public String drive(){
+        runEngine(this);
+      return "gas-powered car's engine is driving";
+
     }
 
 

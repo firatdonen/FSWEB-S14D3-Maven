@@ -16,10 +16,10 @@ public class ElectricCar extends CarSkeleton {
 
     }
     @Override
-    public int drive() {
-        System.out.println(getClass().getSimpleName() + "Electric car's engine is driving.");
-        runEngine();
-    return 0;
+    public String drive() {
+        runEngine(this);
+        return "Electric car's engine is driving.";
+
     }
     //getter ve setter metodları
     public  double getAvgKmPerCharge(){

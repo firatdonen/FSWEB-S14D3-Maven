@@ -17,11 +17,13 @@ public class HybridCar extends CarSkeleton {
         return getClass().getSimpleName()+"Hybrid car's engine is starting.";
 
     }
-    public int drive(){
-        System.out.println(getClass().getSimpleName()+"Hybrid car's engine is starting");
-        runEngine();
-        return 0;
-    }
+    @Override
+    public String drive(){
+        runEngine(this);
+        return"Hybrid car's engine is starting";
+
+           }
+
     //getter setter metodları
     public double getAvgKmPerLiter() { return avgKmPerLitre; }
     public int getBatterySize() { return batterySize; }
